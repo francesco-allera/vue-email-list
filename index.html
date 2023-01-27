@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Vue Email List</title>
+</head>
+<body>
+
+    <div id="app">
+        <!-- vanilla js -->
+        <section id="vanilla">
+            <h3>
+                Lista email tramite JS Vanilla:
+            </h3>
+
+            <ul></ul>
+        </section>
+        <!-- /vanilla js -->
+
+        <!-- jquery -->
+        <section id="jquery">
+            <h3>
+                Lista email tramite jQuery:
+            </h3>
+
+            <ul></ul>
+        </section>
+        <!-- /jquery -->
+
+        <!-- vue.js -->
+        <section id="vue">
+            <h3>
+                Lista email tramite Vue JS:
+            </h3>
+
+            <ul>
+                <li v-for="el in emails">
+                    {{ el }}
+                </li>
+            </ul>
+        </section>
+        <!-- /vue.js -->
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
